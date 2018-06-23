@@ -13,6 +13,7 @@
     <url>http://maven.training/</url>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.1.6.RELEASE</spring.version>
         <java.version>1.8</java.version>
         <junit.version>4.12</junit.version>
