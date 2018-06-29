@@ -187,8 +187,9 @@
                             <items>
                                 <item>buildNumber</item>
                             </items>
-                            <doCheck>true</doCheck>
-                            <doUpdate>true</doUpdate>
+                            <revisiononscmfailure/>
+                            <doCheck>false</doCheck>
+                            <doUpdate>false</doUpdate>
                         </configuration>
                     </plugin>
                 </plugins>
