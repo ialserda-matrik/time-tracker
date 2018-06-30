@@ -26,7 +26,7 @@
     </properties>
 
     <modules>
-        <!--<module>core</module>-->
+        <module>core</module>
         <module>web</module>
     </modules>
 
@@ -104,7 +104,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
-                <!--<module>core</module>-->
+                <module>core</module>
                 <module>web</module>
             </modules>
         </profile>
@@ -119,6 +119,7 @@
         <profile>
             <id>release</id>
             <modules>
+                <module>core</module>
                 <module>web</module>
             </modules>
             <build>
