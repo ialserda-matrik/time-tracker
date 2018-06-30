@@ -17,5 +17,6 @@
 # 2 The build pipeline on the buildserver builds based on the latest tagged version.
 #   It will build the deliverables and puts then in the Nexus staging repository. These new deliverables [for example
 #   the application, stubs and frontend] will be deployed to the teamserver and tested there.
-mvn clean validate -Prelease
+# mvn clean validate -Prelease
 # mvn clean install -Prelease
+mvn clean package -Prelease
