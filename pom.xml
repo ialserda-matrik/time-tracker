@@ -5,7 +5,7 @@
     <groupId>training.time-tracker</groupId>
     <artifactId>time-tracker-parent</artifactId>
     <packaging>pom</packaging>
-    <version>3.1-b10</version>
+    <version>3.1-b11</version>
     <name>${project.artifactId}</name>
     <description>
         This is a simple Maven / Java web project.
@@ -160,7 +160,7 @@
                                     <mainClass>pro.jtaylor.timetracker.main.App</mainClass>
                                 </manifest>
                                 <manifestEntries>
-                                    <!--<implementation-version>${project.version}</implementation-version>-->
+                                    <implementation-version>${project.version}</implementation-version>
                                     <implementation-build>${buildNumber}</implementation-build>
                                 </manifestEntries>
                             </archive>
