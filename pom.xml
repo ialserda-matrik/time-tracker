@@ -25,18 +25,12 @@
         <checkstyle.version>2.15</checkstyle.version>
     </properties>
 
-    <modules>
-        <module>core</module>
-        <module>web</module>
-    </modules>
-
     <scm>
         <developerConnection>scm:git:https://github.com/ialserda-matrik/time-tracker.git</developerConnection>
         <connection>scm:git:https://github.com/ialserda-matrik/time-tracker.git</connection>
         <url>https://github.com/ialserda-matrik/time-tracker.git</url>
         <tag>HEAD</tag>
     </scm>
-
 
     <build>
         <pluginManagement>
@@ -139,22 +133,19 @@
                         <version>1.4</version>
                         <executions>
                             <execution>
-                                <phase>generate-resources</phase>
+                                <phase>validate</phase>
                                 <goals>
                                     <goal>create</goal>
                                 </goals>
                             </execution>
                         </executions>
                         <configuration>
+                            <format>{0,number}</format>
+                            <items>
+                                <item>buildNumber</item>
+                            </items>
                             <doCheck>true</doCheck>
                             <doUpdate>true</doUpdate>
-                            <!--<format>Build: #{0,number}</format>-->
-                            <!--<items>-->
-                                <!--<item>buildNumber</item>-->
-                            <!--</items>-->
-                            <!--<revisionOnScmFailure>-->
-                            <!--</revisionOnScmFailure>-->
-
                         </configuration>
                     </plugin>
                     <plugin>
@@ -213,7 +204,7 @@
 
                 </plugins>
 
-                <finalName>$\{project.artifactId}-$\{project.version}-r$\{buildNumber}</finalName>
+                <!--<finalName>$\{project.artifactId}-$\{project.version}-r$\{buildNumber}</finalName>-->
 
             </build>
         </profile>
