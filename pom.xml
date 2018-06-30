@@ -118,6 +118,9 @@
 
         <profile>
             <id>release</id>
+            <modules>
+                <module>web</module>
+            </modules>
             <build>
                 <resources>
                     <resource>
