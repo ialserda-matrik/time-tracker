@@ -160,7 +160,7 @@
                                     <mainClass>pro.jtaylor.timetracker.main.App</mainClass>
                                 </manifest>
                                 <manifestEntries>
-                                    <implementation-version>${project.version}</implementation-version>
+                                    <!--<implementation-version>${project.version}</implementation-version>-->
                                     <implementation-build>${buildNumber}</implementation-build>
                                 </manifestEntries>
                             </archive>
